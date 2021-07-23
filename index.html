@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- prettier-ignore -->
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"/>
+		<!-- prettier-ignore -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Interactive pricing component</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h2 class="header-heading">Simple, traffic-based pricing</h1>
+					<p class="header-para">
+						Sign-up for our 30-day trial. No credit card required.
+					</p>
+				</div>
+				<div class="card" id="main-card">
+					<div class="slide-container">
+						<input type="range" min="0" max="4" value="2" class="slider" id="pricing-slider" onchange="updateTextInput(this.value);">
+				</div>
+				<div class="billing">
+					<p class="billing-monthly">Monthly Billing</p>
+					<label class="switch">
+						<input type="checkbox" name="switch" id="switch" />
+						<div class="switch-btn"></div>
+					</label>
+					<p class="billing-yearly">Yearly Billing</p>
+					<div class="badge">25% <span id="discount-text">discount</span></div>
+				</div>
+				<hr class="solid" />
+				<div class="card-footer">
+					<ul class="checkmark-stats">
+						<li>Unlimited websites</li>
+						<li>100% data ownership</li>
+						<li>Email reports</li>
+					</ul>
+					<button class="cta-btn">Start my trial</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+	</html>
